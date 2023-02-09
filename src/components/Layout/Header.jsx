@@ -4,12 +4,12 @@ import MealsImg from "../../assets/meals.jpg";
 import CartIcon from "../Cart/CartIcon";
 import classes from "./Header.module.css";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <>
       <header className={classes.header}>
         <h1>Foodie</h1>
-        <button className={classes.button}>
+        <button onClick={props.showModal} className={classes.button}>
           <span className={classes.icon}>
             <CartIcon />
           </span>
